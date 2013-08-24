@@ -446,7 +446,7 @@ bool MultiROM::changeMounts(std::string name)
 	fprintf(f_rec, "/misc\t\temmc\t\t/dev/block/platform/msm_sdcc.1/by-name/misc\n");
 	fprintf(f_rec, "/boot\t\temmc\t\t/dev/block/platform/msm_sdcc.1/by-name/boot\n");
 	fprintf(f_rec, "/recovery\t\temmc\t\t/dev/block/platform/msm_sdcc.1/by-name/recovery\n");
-	fprintf(f_rec, "/usb-otg\t\tvfat\t\t/dev/block/sda1\n");
+	fprintf(f_rec, "/usb-otg\t\tvfat\t\t/dev/block/sda/n");
 	fclose(f_rec);
 
 	if(!(M(type) & MASK_IMAGES))
